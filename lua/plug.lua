@@ -57,6 +57,12 @@ require('packer').startup({
 		use({ 'norcalli/nvim-colorizer.lua', commit = '36c610a'})
 		-- }}}
 
+		-- {{{ term
+		use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
+		  require("toggleterm").setup()
+		end}
+		-- }}}
+
 		-- {{{ themes
 		-- popular themes incoming
 		use({'joshdick/onedark.vim'})
